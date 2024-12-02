@@ -58,13 +58,13 @@ describe 'Usuário acessa página de listagem de sessões' do
     )
     session_one = Session.create!(
       movie_id: movie.id,
-      day_of_week: :segunda,
+      day_of_week: 1,
       hour: "08:00",
       room_id: room.id
     )
     session_two = Session.create!(
       movie_id: movie.id,
-      day_of_week: :segunda,
+      day_of_week: 1,
       hour: "09:00",
       room_id: room.id
     )
@@ -78,6 +78,8 @@ describe 'Usuário acessa página de listagem de sessões' do
 
     # Assert
     expect(page).not_to have_content 'Não existem ainda sessões cadastradas'
-    expect(page).to have_link 'Cadastrar Sessão'   
+    expect(page).to have_content "Sessão: #{session_one.hour}"
+    expect(page).to have_content "Filme: #{movie.title}"
+    expect(page).to have_content "Sessão: #{session_two.hour}"
   end
 end

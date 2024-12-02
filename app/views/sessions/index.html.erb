@@ -1,5 +1,17 @@
 <%= render @room %>
 
-<h1>Não existem ainda sessões cadastradas</h1>
+<% if @room.sessions.empty? %>
+  <h1>Não existem ainda sessões cadastradas</h1>
+<% else %>
+  <% @room.sessions.each do |session| %>
+    <dl>
+      <dt>Sessão: </dt>
+      <dd><%= session.hour %></dd>
+      <dt>Filme: </dt>
+      <dd><%= session.movie.title %></dd>
+    <dl>
+  <% end %>
+<% end %>
 
-<%= link_to 'Cadastrar Sessão', root_path %>
+
+<%= link_to 'Cadastrar Sessão', new_room_session_path room.id %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_11_26_220830) do
+ActiveRecord::Schema[8.0].define(version: 2024_12_02_142847) do
   create_table "movie_theaters", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -37,6 +37,17 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_26_220830) do
     t.index ["movie_theater_id"], name: "index_rooms_on_movie_theater_id"
   end
 
+  create_table "sessions", force: :cascade do |t|
+    t.integer "movie_id", null: false
+    t.integer "day_of_week"
+    t.string "hour"
+    t.integer "room_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["movie_id"], name: "index_sessions_on_movie_id"
+    t.index ["room_id"], name: "index_sessions_on_room_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -51,4 +62,6 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_26_220830) do
   end
 
   add_foreign_key "rooms", "movie_theaters"
+  add_foreign_key "sessions", "movies"
+  add_foreign_key "sessions", "rooms"
 end

@@ -1,0 +1,13 @@
+<h1>Página de cadastro de sessão</h1>
+
+<% form_with (model: [@room, @session]) do |f| %>
+  <div>
+    <%= f.label :hour %>
+    <%= f.text_field :hour %>
+  </div>
+   <div>
+    <%= f.label :movie_id %>
+    <%= f.collection_select @movies, :movie_id, :id, :title %>
+  </div>
+  <% f.submit 'Salvar' %>
+<% end %>
