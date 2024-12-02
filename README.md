@@ -55,8 +55,8 @@ sala has_many: sessions
 
 um usuário acessa página de listagem de sessões
 testes 1:
-e deve estar logado 
-e se nao houver sessões cadastradas diz que ainda não existem e tem o botão de cadastrar nova
+ok e deve estar logado 
+ok e se nao houver sessões cadastradas diz que ainda não existem e tem o botão de cadastrar nova
 se houver, mostra as existentes e a opção de remover e de cadastrar
 usuário acessa página de listagem e adiciona nova sessão com sucesso
 usuário falha ao cadastrar sessão por ausencia de dados
