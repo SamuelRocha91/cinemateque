@@ -1,0 +1,24 @@
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+/home/samuel/.rbenv/versions/3.3.5/bin/ruby extconf.rb
+checking for rb_category_warn()... yes
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241128-295427-bvdf0u sitelibdir\=./.gem.20241128-295427-bvdf0u clean
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241128-295427-bvdf0u sitelibdir\=./.gem.20241128-295427-bvdf0u
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241128-295427-bvdf0u sitelibdir\=./.gem.20241128-295427-bvdf0u install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20241128-295427-bvdf0u
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/date-3.4.0/ext/date
+make DESTDIR\= sitearchdir\=./.gem.20241128-295427-bvdf0u sitelibdir\=./.gem.20241128-295427-bvdf0u clean

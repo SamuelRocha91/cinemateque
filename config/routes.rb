@@ -12,5 +12,9 @@ Rails.application.routes.draw do
     resources :rooms, only: [:new, :create]
   end
 
+  resources :rooms, only: [] do 
+    resources :sessions
+  end
+
   resources :movies, only: [:index, :new, :create]
 end

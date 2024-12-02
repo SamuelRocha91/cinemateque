@@ -1,0 +1,47 @@
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/prism-1.2.0/ext/prism
+/home/samuel/.rbenv/versions/3.3.5/bin/ruby extconf.rb
+checking for prism.h in /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/prism-1.2.0/include... yes
+checking for prism/extension.h in /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/prism-1.2.0/ext... yes
+checking for whether -fvisibility=hidden is accepted as CFLAGS... yes
+Running make build/libprism.a with {"SOEXT"=>"so", "MAKEDIRS"=>"/usr/bin/mkdir -p", "RMALL"=>"rm -fr"}
+compiling build/static/diagnostic.o
+compiling build/static/encoding.o
+compiling build/static/node.o
+compiling build/static/options.o
+compiling build/static/pack.o
+compiling build/static/prettyprint.o
+compiling build/static/prism.o
+compiling build/static/regexp.o
+compiling build/static/serialize.o
+compiling build/static/static_literals.o
+compiling build/static/token_type.o
+compiling build/static/util/pm_buffer.o
+compiling build/static/util/pm_char.o
+compiling build/static/util/pm_constant_pool.o
+compiling build/static/util/pm_integer.o
+compiling build/static/util/pm_list.o
+compiling build/static/util/pm_memchr.o
+compiling build/static/util/pm_newline_list.o
+compiling build/static/util/pm_string.o
+compiling build/static/util/pm_strncasecmp.o
+compiling build/static/util/pm_strpbrk.o
+building build/libprism.a with ar
+ar: criando build/libprism.a
+creating Makefile
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/prism-1.2.0/ext/prism
+make DESTDIR\= sitearchdir\=./.gem.20241128-296558-y92plv sitelibdir\=./.gem.20241128-296558-y92plv clean
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/prism-1.2.0/ext/prism
+make DESTDIR\= sitearchdir\=./.gem.20241128-296558-y92plv sitelibdir\=./.gem.20241128-296558-y92plv
+compiling api_node.c
+compiling api_pack.c
+compiling extension.c
+linking shared-object prism/prism.so
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/prism-1.2.0/ext/prism
+make DESTDIR\= sitearchdir\=./.gem.20241128-296558-y92plv sitelibdir\=./.gem.20241128-296558-y92plv install
+/usr/bin/install -c -m 0755 prism.so ./.gem.20241128-296558-y92plv/prism
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/prism-1.2.0/ext/prism
+make DESTDIR\= sitearchdir\=./.gem.20241128-296558-y92plv sitelibdir\=./.gem.20241128-296558-y92plv clean

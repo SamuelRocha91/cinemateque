@@ -40,3 +40,27 @@ executar a aplicação Rails e outro comando que garante que os recursos de
 front-end do projeto serão compilados e atualizados caso sejam modificados
 durante a navegação.
 
+
+# cadastrar sessões
+
+filme(movie_id)
+day_of_week(enum: integer)
+horario:(time)
+
+- página de listagem de sessões;
+ver todas as sessões de um cinema
+remover / criar sessão
+
+sala has_many: sessions
+
+um usuário acessa página de listagem de sessões
+testes 1:
+e deve estar logado 
+e se nao houver sessões cadastradas diz que ainda não existem e tem o botão de cadastrar nova
+se houver, mostra as existentes e a opção de remover e de cadastrar
+usuário acessa página de listagem e adiciona nova sessão com sucesso
+usuário falha ao cadastrar sessão por ausencia de dados
+usuário remove sessão com sucesso
+
+
+

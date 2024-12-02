@@ -1,0 +1,33 @@
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/rbs-3.6.1/ext/rbs_extension
+/home/samuel/.rbenv/versions/3.3.5/bin/ruby extconf.rb
+checking for whether -std=gnu99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/rbs-3.6.1/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20241128-296558-x1m6gd sitelibdir\=./.gem.20241128-296558-x1m6gd clean
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/rbs-3.6.1/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20241128-296558-x1m6gd sitelibdir\=./.gem.20241128-296558-x1m6gd
+compiling constants.c
+compiling lexer.c
+compiling lexstate.c
+compiling location.c
+compiling main.c
+compiling parser.c
+parser.c:57:1: warning: ‘inline’ is not at beginning of declaration [-Wold-style-declaration]
+   57 | static void inline melt_array(VALUE *array) {
+      | ^~~~~~
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling parserstate.c
+compiling ruby_objs.c
+compiling unescape.c
+linking shared-object rbs_extension.so
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/rbs-3.6.1/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20241128-296558-x1m6gd sitelibdir\=./.gem.20241128-296558-x1m6gd install
+/usr/bin/install -c -m 0755 rbs_extension.so ./.gem.20241128-296558-x1m6gd
+
+current directory: /home/samuel/projectsByOrganizations/treinaDev13/cinemateque/vendor/bundle/ruby/3.3.0/gems/rbs-3.6.1/ext/rbs_extension
+make DESTDIR\= sitearchdir\=./.gem.20241128-296558-x1m6gd sitelibdir\=./.gem.20241128-296558-x1m6gd clean
